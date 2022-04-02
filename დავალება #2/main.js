@@ -1,4 +1,4 @@
-/* მოგესალმებით მეგობრებო ეს არის დავალება ნომერი 2. დავალების ყველა ეტაპი აღწერილია კომენტარის სახით
+  /* მოგესალმებით მეგობრებო ეს არის დავალება ნომერი 2. დავალების ყველა ეტაპი აღწერილია კომენტარის სახით
  * 1) შედარება
  * 3) If პირობები
  * 4) ლოგიკური ოპერატორები
@@ -23,8 +23,8 @@ const text2 = "0";
 
 // >>> კოდი დაწერეთ აქ 
 
-const isFalse = [];
-const isTrue = [];
+const isFalse = [num1,boolean1,emptyString,boolean2,];
+const isTrue = [num2,text,text2];
 
 //
 
@@ -32,9 +32,13 @@ const isTrue = [];
 // შეცვალეთ ერთი ასო რომ მიიღოთ ჭეშმარიტი დებულება
 // მოკლედ ახსენით მუშაობის პრინციპი თუ რატომ იმოქმედა
 
-console.log("abc" > "ah")
+console.log("aic" > "ah")
+
+// შეცვალეთ b ასო i-ით,რადგან h-ზე მაღალა დგას, რომ მიიღოთ ჭეშმარიტი დებულება
 console.log(2 === "004")
 
+// ერთ მხარეს რიცხვია , მეორე მხარეს სტრინგი
+// სტრინგი ხდება რიცხვი და  დებულება  ჭეშმარიტია 
 
 
 // <------- ლოგიკური ოპერატორები ---------#### //
@@ -44,6 +48,13 @@ console.log(2 === "004")
 
 // >>> კოდი დაწერეთ აქ 
 
+let Age = prompt("რამდენი წლის ხარ?");
+
+if (Age >=18){
+  console.log("დალევა შეგიძლია");
+}else{
+  console.log("დალევა არ შეგიძლია")
+}
 
 //
 
@@ -51,6 +62,20 @@ console.log(2 === "004")
 // მოიფიქრეთ 2 if else-ის მაგალითი თქვენით
 
 // >>> კოდი დაწერეთ აქ
+  
+const pet = 'dog';
+
+if (pet === 'lizad'){
+  console.log('i own a lizad');
+}else if( pet === 'dog'){
+  console.log('i own a dog');
+}else if( pat === 'cat'){
+  console.log('i own a cat');
+}else if( pet === 'snake'){
+  console.log('i own a snake');
+}else if( pat === 'parrot'){
+  console.log('i own a parrot')
+}
 
 //
 
@@ -81,6 +106,21 @@ let colorId = 3
 // >>> კოდი დაწერეთ აქ
 
 
+if(colorId == 0){ 
+  console.log('black');
+  }else if(colorId == 1){
+   console.log('blue')
+  }else if( colorId == 2){
+    console.log('green')
+  }else if( colorId == 3){
+    console.log('red')
+  }else if( colorId == 4){
+    console.log('white')
+  }else{
+    console.log('undefinde')
+  }
+
+
 //
 
 
@@ -88,7 +128,14 @@ let colorId = 3
 // გადაიყვანეთ If ternary operator-ში მაგ. (true ? 1 : 2) 
 
 // >>> კოდი დაწერეთ აქ
+let color = (colorId == 0) ? "black":
+(colorId == 1) ? "blue":
+(colorId == 2) ? "green":
+(colorId == 3) ? "red":
+(colorId == 4) ? "white":
+undefined;
 
+console.log(color);
 
 //
 
@@ -100,6 +147,26 @@ let colorId = 3
 
 
 // >>> კოდი დაწერეთ აქ
+
+switch (colorId){
+  case 0:
+    color = 'black'
+    break;
+  case 1:
+    color = 'blue'
+    break;
+  case 2:
+    color = 'green'
+    break;
+  case 3:
+    color = 'red'
+    break;
+  case 4:
+    color = 'white'
+    break; 
+  default:
+    undefined;             
+}
 
 
 //
@@ -138,8 +205,25 @@ function myFun() {
   let x = prompt("მე მზად არ ვარ პასუხისათვის")
 
   // >>> კოდი დაწერეთ აქ გამოიყენეთ Switch
-
-
+  switch (x){
+    case 'გამარჯობა':
+      alert('გამარჯობა,რით დაგეხმაროთ'); 
+      break;
+    case 'მაინტერესებს სამუშაო დღეები':
+      alert('ორშაბათიდან პარასკებამე');
+      break;
+    case 'მაინტერესებს სამუშაო საათები':
+      alert('10:00 - 18:00');
+      break;
+    case 'მინდა ჩამოწერა':
+      alert('მოგწერეთ დღე და საათი');
+      break;
+    case 'მაინტერესებს სამუშაო საათები':
+            alert('10:00 - 18:00');
+            break;    
+    default:
+      alert('ჩაწერილი ხართ,თუ კითხვები არ გაქვთ დაგემშვიდობებით')
+  }
   //
 
   // რეკურსიული ფუნქცია

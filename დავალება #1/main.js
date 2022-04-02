@@ -9,12 +9,11 @@
 
 // 1 კომენტარები
 
-/
+/*
   // კომენტარები გაფუჭდა თქვენი დავალებაა
   // არასწორად დაწერილი კომენტარი ჩაასწოროთ
   // და ასევე გამოიყენოთ თქვენი კოდის აღსაწერად
 */
-
 
 
 // 2 ცვლადები
@@ -31,12 +30,23 @@
 
 // >>>> კოდი დაწერეთ აქ
 
+const Name = "Leonardo" ;
+const UserName = "Dicaprio" ;
+let Age = 48 ;
+const Year = 1974 ;
+const BirthPlace = "Los Angeles";
 
+
+console.log(typeof age);
+console.log(typeof UserName);
+console.log(typeof Name);
+console.log(typeof BirthPlace);
+console.log(typeof Year);
 
 
 // 
 
-/
+/*
   // დროა დავიწყოთ მზადება ჩვენს მომავალ პროექტზე.
   // ჩვენი დავალეებაა მოვიფიქროთ რაიმე პროდუქტთა სია
   // რომელსაც გამოვიყენებთ მომავალში.
@@ -50,9 +60,17 @@
 */
 
 
-/ / >>>> კოდი დაწერეთ აქ
+// >>>> კოდი დაწერეთ აქ
 
+  const BookName1 = "დიდოსტატის მარჯვენა" ;
+  const AuthrName1 = "კონსტანტინე გამსახურდია" ;
+  const CreateDa1 = "1939 წელი" ;
+  let ProductQuant = 30 ;
 
+  const BookName2 = "არასოდეს გაამიშვა" ;
+  const AuthrName2 = "კაზუო იშიგურო" ;
+  const CreateDa2 = "20 საუკუნე" ;
+  let Productquant = 31 ;
 //
 
 
@@ -65,11 +83,11 @@
 */
 
 
-
-const age = "1";
-const hisName = ["bob"];
-const isHigh = "true";
-const dateOfBirth = "1995";
+/---------ჩასწორებლია------/
+const age = 1;
+const hisName = "bob";
+const isHigh = true;
+const dateOfBirth = 1995;
 
 
 
@@ -85,10 +103,15 @@ console.log(typeof dateOfBirth === "number")
 
 
 
-/ აქ უნდა გაიგოთ თქვენი პროდუქტის სიის ტიპი
+// აქ უნდა გაიგოთ თქვენი პროდუქტის სიის ტიპი
+
 
 // მაგ: console.log(typeof age)
-
+ 
+console.log(typeof age);
+console.log(typeof hisName);
+console.log(typeof isHigh);
+console.log(typeof dateOfBirth);
 
 
 // ოპერატორები არითმეტიკა
@@ -98,6 +121,12 @@ let num = 5;
 // გამოიყენეთ ყველა ვარიანტი რომლითაც შეგვიძლია ამ ციფრის გაზრდა
 
 // >>> კოდი დაწერეთ აქ
+
+
+const a = 2
+num += a;
+num *= a;
+num **= a;
 
 
 //
@@ -111,5 +140,12 @@ console.log(num)
 
 // >>> კოდი დაწერეთ აქ
 
+
+let Nam = "nike";
+let AGE = 19;
+let number = "20"
+
+console.log(Nam + AGE + number);
+console.log(typeof(Nam) + typeof(AGE) + typeof(number));
 
 //
